@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   
   
-  <title>A architect</title>
+  <title>ionic从安装到打包apk进行真机测试指南 | A architect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ionic从安装到打包apk进行真机测试指南环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-download">
+  <meta name="description" content="环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-downloads.html  配置环境变量   创建系统变">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A architect">
-<meta property="og:url" content="http://blog.jgxz.ltd/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/index.html">
+<meta property="og:title" content="ionic从安装到打包apk进行真机测试指南">
+<meta property="og:url" content="http://blog.jgxz.ltd/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="A architect">
-<meta property="og:description" content="ionic从安装到打包apk进行真机测试指南环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-download">
+<meta property="og:description" content="环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-downloads.html  配置环境变量   创建系统变">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150778972-0238c39b-93ac-4ce6-8a66-b8a594e31996.webp#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&originHeight=185&originWidth=656&size=0&status=done&style=none&width=656">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150854263-2205c822-55cc-4c68-bd2c-041a0d0cfc8d.webp#align=left&display=inline&height=561&margin=%5Bobject%20Object%5D&originHeight=561&originWidth=524&size=0&status=done&style=none&width=524">
@@ -31,8 +31,8 @@
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151085268-4dc78ec4-a2b7-43e1-96fd-58280f0e7c17.webp#align=left&display=inline&height=683&margin=%5Bobject%20Object%5D&originHeight=683&originWidth=801&size=0&status=done&style=none&width=801">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151810141-50514b50-77db-496b-8e77-f3898d621c6b.webp#align=left&display=inline&height=223&margin=%5Bobject%20Object%5D&originHeight=223&originWidth=978&size=0&status=done&style=none&width=978">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/491914/1609151916621-37a798ef-dcc3-4826-92fd-cff3f94e71af.png#align=left&display=inline&height=268&margin=%5Bobject%20Object%5D&name=image.png&originHeight=535&originWidth=1156&size=62353&status=done&style=none&width=578">
-<meta property="article:published_time" content="2020-12-28T10:40:58.370Z">
-<meta property="article:modified_time" content="2020-12-28T10:40:32.202Z">
+<meta property="article:published_time" content="2020-12-28T10:43:53.000Z">
+<meta property="article:modified_time" content="2020-12-28T10:43:37.677Z">
 <meta property="article:author" content="codeyi">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150778972-0238c39b-93ac-4ce6-8a66-b8a594e31996.webp#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&originHeight=185&originWidth=656&size=0&status=done&style=none&width=656">
@@ -96,19 +96,29 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-ionic从安装到打包apk进行真机测试指南 (1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-ionic从安装到打包apk进行真机测试指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/" class="article-date">
-  <time class="dt-published" datetime="2020-12-28T10:40:58.370Z" itemprop="datePublished">2020-12-28</time>
+    <a href="/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97/" class="article-date">
+  <time class="dt-published" datetime="2020-12-28T10:43:53.000Z" itemprop="datePublished">2020-12-28</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ionic从安装到打包apk进行真机测试指南
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="ionic从安装到打包apk进行真机测试指南"><a href="#ionic从安装到打包apk进行真机测试指南" class="headerlink" title="ionic从安装到打包apk进行真机测试指南"></a>ionic从安装到打包apk进行真机测试指南</h1><h2 id="环境搭建-这里是我安装的版本"><a href="#环境搭建-这里是我安装的版本" class="headerlink" title="环境搭建(这里是我安装的版本)"></a>环境搭建(这里是我安装的版本)</h2><h3 id="1-nodejs-使用nvm安装-我安装的是12-18-4版本"><a href="#1-nodejs-使用nvm安装-我安装的是12-18-4版本" class="headerlink" title="1. nodejs(使用nvm安装, 我安装的是12.18.4版本)"></a>1. nodejs(使用nvm安装, 我安装的是12.18.4版本)</h3><ol>
+        <h2 id="环境搭建-这里是我安装的版本"><a href="#环境搭建-这里是我安装的版本" class="headerlink" title="环境搭建(这里是我安装的版本)"></a>环境搭建(这里是我安装的版本)</h2><h3 id="1-nodejs-使用nvm安装-我安装的是12-18-4版本"><a href="#1-nodejs-使用nvm安装-我安装的是12-18-4版本" class="headerlink" title="1. nodejs(使用nvm安装, 我安装的是12.18.4版本)"></a>1. nodejs(使用nvm安装, 我安装的是12.18.4版本)</h3><ol>
 <li><p>参考知识库 <strong>使用nvm/nvm-windows安装与配置nodejs开发环境</strong></p>
 <h3 id="2-jdk-15-0-1"><a href="#2-jdk-15-0-1" class="headerlink" title="2. jdk(15.0.1)"></a>2. jdk(15.0.1)</h3></li>
 <li><p>下载地址: <a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</a></p>
@@ -168,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/" data-id="ckj8flt89000398uk3hcxdqjn" data-title="" class="article-share-link">分享</a>
+      <a data-url="http://blog.jgxz.ltd/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97/" data-id="ckj8fortq0004houk3jrcd3g3" data-title="ionic从安装到打包apk进行真机测试指南" class="article-share-link">分享</a>
       
       
       
@@ -219,7 +229,7 @@
       <ul>
         
           <li>
-            <a href="/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/">(no title)</a>
+            <a href="/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97/">ionic从安装到打包apk进行真机测试指南</a>
           </li>
         
           <li>
