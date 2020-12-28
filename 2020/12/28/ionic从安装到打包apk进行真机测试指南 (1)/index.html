@@ -6,15 +6,36 @@
   
   <title>A architect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="angular, react, vue, nodejs, express, typescript, mongodb">
-<meta property="og:type" content="website">
+  <meta name="description" content="ionic从安装到打包apk进行真机测试指南环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-download">
+<meta property="og:type" content="article">
 <meta property="og:title" content="A architect">
-<meta property="og:url" content="http://blog.jgxz.ltd/index.html">
+<meta property="og:url" content="http://blog.jgxz.ltd/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/index.html">
 <meta property="og:site_name" content="A architect">
-<meta property="og:description" content="angular, react, vue, nodejs, express, typescript, mongodb">
+<meta property="og:description" content="ionic从安装到打包apk进行真机测试指南环境搭建(这里是我安装的版本)1. nodejs(使用nvm安装, 我安装的是12.18.4版本) 参考知识库 使用nvm&#x2F;nvm-windows安装与配置nodejs开发环境 2. jdk(15.0.1) 下载地址: https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;javase&#x2F;javase-jdk8-download">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150778972-0238c39b-93ac-4ce6-8a66-b8a594e31996.webp#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&originHeight=185&originWidth=656&size=0&status=done&style=none&width=656">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150854263-2205c822-55cc-4c68-bd2c-041a0d0cfc8d.webp#align=left&display=inline&height=561&margin=%5Bobject%20Object%5D&originHeight=561&originWidth=524&size=0&status=done&style=none&width=524">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150876628-47cb6378-831b-4f0b-8b0a-02fd33312876.webp#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&originHeight=185&originWidth=655&size=0&status=done&style=none&width=655">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/491914/1609150913902-207522a8-d4b6-4bde-b633-e71b656a602d.png#align=left&display=inline&height=204&margin=%5Bobject%20Object%5D&name=image.png&originHeight=408&originWidth=932&size=33342&status=done&style=none&width=466">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150982494-f1ee9c2e-07e1-4316-ba63-1149be70d0ce.webp#align=left&display=inline&height=390&margin=%5Bobject%20Object%5D&originHeight=390&originWidth=503&size=0&status=done&style=none&width=503">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150993006-4f4fc3b0-0174-4332-beee-a583d0ed88ac.webp#align=left&display=inline&height=390&margin=%5Bobject%20Object%5D&originHeight=390&originWidth=503&size=0&status=done&style=none&width=503">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151001094-dca3ebab-21d9-40a1-ad41-cd647e6b097a.webp#align=left&display=inline&height=390&margin=%5Bobject%20Object%5D&originHeight=390&originWidth=503&size=0&status=done&style=none&width=503">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151011948-f5fd1cfa-2267-45eb-b231-6ba4ca43917a.webp#align=left&display=inline&height=730&margin=%5Bobject%20Object%5D&originHeight=730&originWidth=796&size=0&status=done&style=none&width=796">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151024075-a13debc3-b9a5-4685-8c03-ae3c6522dda4.webp#align=left&display=inline&height=719&margin=%5Bobject%20Object%5D&originHeight=719&originWidth=1028&size=0&status=done&style=none&width=1028">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151035710-05e0828d-51a2-4d53-a039-8d2686681f03.webp#align=left&display=inline&height=650&margin=%5Bobject%20Object%5D&originHeight=650&originWidth=1069&size=0&status=done&style=none&width=1069">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151043056-fa577224-1b4c-46d9-9d08-1a1d3d241ba3.webp#align=left&display=inline&height=650&margin=%5Bobject%20Object%5D&originHeight=650&originWidth=1080&size=0&status=done&style=none&width=1080">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151056092-33ba8a0b-80be-40c1-84a4-3080dd5874d8.webp#align=left&display=inline&height=639&margin=%5Bobject%20Object%5D&originHeight=639&originWidth=1068&size=0&status=done&style=none&width=1068">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151062470-527cc25b-4ff1-440d-8aed-c78851cb0466.webp#align=left&display=inline&height=719&margin=%5Bobject%20Object%5D&originHeight=719&originWidth=1014&size=0&status=done&style=none&width=1014">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151071099-99e69dc1-0a46-45cd-a69b-3231e6909157.webp#align=left&display=inline&height=714&margin=%5Bobject%20Object%5D&originHeight=714&originWidth=1014&size=0&status=done&style=none&width=1014">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151079103-4c586dff-34ae-41c6-b312-e67b84638cf6.webp#align=left&display=inline&height=684&margin=%5Bobject%20Object%5D&originHeight=684&originWidth=800&size=0&status=done&style=none&width=800">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151085268-4dc78ec4-a2b7-43e1-96fd-58280f0e7c17.webp#align=left&display=inline&height=683&margin=%5Bobject%20Object%5D&originHeight=683&originWidth=801&size=0&status=done&style=none&width=801">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609151810141-50514b50-77db-496b-8e77-f3898d621c6b.webp#align=left&display=inline&height=223&margin=%5Bobject%20Object%5D&originHeight=223&originWidth=978&size=0&status=done&style=none&width=978">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/491914/1609151916621-37a798ef-dcc3-4826-92fd-cff3f94e71af.png#align=left&display=inline&height=268&margin=%5Bobject%20Object%5D&name=image.png&originHeight=535&originWidth=1156&size=62353&status=done&style=none&width=578">
+<meta property="article:published_time" content="2020-12-28T10:40:58.370Z">
+<meta property="article:modified_time" content="2020-12-28T10:40:32.202Z">
 <meta property="article:author" content="codeyi">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2020/webp/491914/1609150778972-0238c39b-93ac-4ce6-8a66-b8a594e31996.webp#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&originHeight=185&originWidth=656&size=0&status=done&style=none&width=656">
   
     <link rel="alternate" href="/atom.xml" title="A architect" type="application/atom+xml">
   
@@ -75,9 +96,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ionic从安装到打包apk进行真机测试指南 (1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-ionic从安装到打包apk进行真机测试指南 (1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/12/28/ionic%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%93%E5%8C%85apk%E8%BF%9B%E8%A1%8C%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97%20(1)/" class="article-date">
   <time class="dt-published" datetime="2020-12-28T10:40:58.370Z" itemprop="datePublished">2020-12-28</time>
@@ -156,214 +175,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-手写promise" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/26/%E6%89%8B%E5%86%99promise/" class="article-date">
-  <time class="dt-published" datetime="2020-12-26T14:36:06.000Z" itemprop="datePublished">2020-12-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/26/%E6%89%8B%E5%86%99promise/">手写promsie</a>
-    </h1>
+    <a href="/2020/12/26/%E6%89%8B%E5%86%99promise/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">手写promsie</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>cover_img:     # show in home page, the post card header<br>feature_img:   # show in post page, content header<br>description:<br>keywords: </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/26/%E6%89%8B%E5%86%99promise/" data-id="ckj8flt8h000698uk4l4ahvph" data-title="手写promsie" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-ionic学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/24/ionic%E5%AD%A6%E4%B9%A0/" class="article-date">
-  <time class="dt-published" datetime="2020-12-24T05:45:53.000Z" itemprop="datePublished">2020-12-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/24/ionic%E5%AD%A6%E4%B9%A0/">ionic安装使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><p>建议使用cli安装(或者从github上clone)</p>
-<p>官网地址 <a target="_blank" rel="noopener" href="https://ionicframework.com/">https://ionicframework.com/</a></p>
-<h4 id="使用cli安装"><a href="#使用cli安装" class="headerlink" title="使用cli安装"></a><strong>使用cli安装</strong></h4><ul>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cordova ionic</span><br></pre></td></tr></table></figure>
-<h4 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a><strong>创建项目</strong></h4></li>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ionic start myApp tabs(style)</span><br></pre></td></tr></table></figure>
-<h2 id="手势操作"><a href="#手势操作" class="headerlink" title="手势操作"></a>手势操作</h2></li>
-</ul>
-<h4 id="安装hammerjs"><a href="#安装hammerjs" class="headerlink" title="安装hammerjs"></a><strong>安装hammerjs</strong></h4><ul>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hammerjs</span><br></pre></td></tr></table></figure>
-<h4 id="引入"><a href="#引入" class="headerlink" title="引入"></a><strong>引入</strong></h4></li>
-<li><p>在根模块(<strong>app.module.ts</strong>)导入并声明</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ import &#123; HammerModule &#125; from <span class="string">&#x27;@angular/platform-browser&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>在<strong>main.ts</strong>中导入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ import <span class="string">&#x27;hammerjs&#x27;</span></span><br></pre></td></tr></table></figure>
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a><strong>使用</strong></h4></li>
-<li><p>为指定元素绑定手势操作事件就可以</p>
-</li>
-<li><p>tap ionic5点击事件</p>
-</li>
-<li><p>press ionic5长按事件</p>
-</li>
-<li><p>pan ionic5滑动的时候触发的事件,滑动触发多次</p>
-</li>
-<li><p>swipe ionic5滑动事件 滑动触发一次</p>
-</li>
-<li><p>rotate ionic5旋转事件</p>
-</li>
-<li><p>pinch 捏合(pinch)手势</p>
-</li>
-</ul>
-<p> <strong>默认情况下面ionic5中的手势事件是没法使用的，按照如上操作就可以正常使用ionic5中的gestures 手势事件</strong></p>
-<h2 id="模态框组件使用"><a href="#模态框组件使用" class="headerlink" title="模态框组件使用"></a>模态框组件使用</h2><h4 id="传值"><a href="#传值" class="headerlink" title="传值"></a><strong>传值</strong></h4><ul>
-<li><p>@Input — 直接使用value就可以</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ @Input() value: number(指定类型)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>引入NavParams</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ import &#123; NavParams &#125; from <span class="string">&#x27;@ionic/angular&#x27;</span>;</span><br><span class="line">$ constructor(navParams: NavParams) &#123; &#125;</span><br><span class="line">$ 1. this.navparams.data.value</span><br><span class="line">$ 2. this.navparams.get(<span class="string">&#x27;value&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="路由跳转传值"><a href="#路由跳转传值" class="headerlink" title="路由跳转传值"></a>路由跳转传值</h2><h4 id="普通路由跳转"><a href="#普通路由跳转" class="headerlink" title="普通路由跳转"></a><strong>普通路由跳转</strong></h4><ul>
-<li><p>使用 routerLink</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;ion-button [routerLink]=<span class="string">&quot;[&#x27;/shop&#x27;]&quot;</span>&gt;shop&lt;/ion-button&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="路由跳转传值-1"><a href="#路由跳转传值-1" class="headerlink" title="路由跳转传值"></a><strong>路由跳转传值</strong></h4></li>
-<li><p>使用 queryParams</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;ion-button [routerLink]=<span class="string">&quot;[&#x27;/shop&#x27;]&quot;</span> [queryParams]=<span class="string">&quot;&#123;aid: 123&#125;&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>引入 ActivatedRoute</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  // ts代码</span><br><span class="line">$ import &#123; ActivatedRoute &#125; from <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line">  constructor(</span><br><span class="line">      private route: ActivatedRoute</span><br><span class="line">  ) &#123; &#125;</span><br><span class="line">  <span class="function"><span class="title">getParams</span></span>() &#123;</span><br><span class="line">    this.route.queryParams.subscribe(res =&gt; console.log(res))</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/24/ionic%E5%AD%A6%E4%B9%A0/" data-id="ckj8flt8h000598uk9aul3agu" data-title="ionic安装使用" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-express" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/23/express/" class="article-date">
-  <time class="dt-published" datetime="2020-12-23T14:29:37.000Z" itemprop="datePublished">2020-12-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/23/express/">express</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/23/express/" data-id="ckj8flt8b000498uk9618131a" data-title="express" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hexo搭建个人博客指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/23/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" class="article-date">
-  <time class="dt-published" datetime="2020-12-23T08:21:09.637Z" itemprop="datePublished">2020-12-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/23/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hexo搭建个人博客指南</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/23/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" data-id="ckj8flt87000198ukasrq19nx" data-title="hexo搭建个人博客指南" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
