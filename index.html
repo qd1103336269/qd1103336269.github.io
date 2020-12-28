@@ -104,7 +104,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/26/%E6%89%8B%E5%86%99promise/" data-id="ckj7v98g10005xsukhamf6uc2" data-title="手写promsie" class="article-share-link">分享</a>
+      <a data-url="http://blog.jgxz.ltd/2020/12/26/%E6%89%8B%E5%86%99promise/" data-id="ckj7wk7y20004a8uka0nxfn55" data-title="手写promsie" class="article-share-link">分享</a>
       
       
       
@@ -179,17 +179,19 @@
 <h2 id="路由跳转传值"><a href="#路由跳转传值" class="headerlink" title="路由跳转传值"></a>路由跳转传值</h2></li>
 </ul>
 <h4 id="普通路由跳转"><a href="#普通路由跳转" class="headerlink" title="普通路由跳转"></a><strong>普通路由跳转</strong></h4><ul>
-<li><p>使用routerLink</p>
+<li><p>使用 routerLink</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;ion-button [routerLink]=<span class="string">&quot;[&#x27;/shop&#x27;]&quot;</span>&gt;shop&lt;/ion-button&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="路由跳转传值-1"><a href="#路由跳转传值-1" class="headerlink" title="路由跳转传值"></a><strong>路由跳转传值</strong></h4></li>
-<li><p>使用queryParams</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;ion-button [routerLink]=<span class="string">&quot;[&#x27;/shop&#x27;]&quot;</span> [queryParams]=<span class="string">&quot;&#123;aid: 123&#125;&quot;</span>&gt;</span><br><span class="line">  // ts代码</span><br><span class="line">$ import &#123; ActivatedRoute &#125; from <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line">  constructor(</span><br><span class="line">      private route: ActivatedRoute</span><br><span class="line">  ) &#123; &#125;</span><br><span class="line">  <span class="function"><span class="title">getParams</span></span>() &#123;</span><br><span class="line">    this.route.queryParams.subscribe(res =&gt; console.log(res))</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>使用 queryParams</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;ion-button [routerLink]=<span class="string">&quot;[&#x27;/shop&#x27;]&quot;</span> [queryParams]=<span class="string">&quot;&#123;aid: 123&#125;&quot;</span>&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>引入 ActivatedRoute</p>
+</li>
 </ul>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  // ts代码</span><br><span class="line">$ import &#123; ActivatedRoute &#125; from <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line">  constructor(</span><br><span class="line">      private route: ActivatedRoute</span><br><span class="line">  ) &#123; &#125;</span><br><span class="line">  <span class="function"><span class="title">getParams</span></span>() &#123;</span><br><span class="line">    this.route.queryParams.subscribe(res =&gt; console.log(res))</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/24/ionic%E5%AD%A6%E4%B9%A0/" data-id="ckj7v98fw0001xsukfeyi40uv" data-title="ionic安装使用" class="article-share-link">分享</a>
+      <a data-url="http://blog.jgxz.ltd/2020/12/24/ionic%E5%AD%A6%E4%B9%A0/" data-id="ckj7wk7y00003a8uk4a0ygyeb" data-title="ionic安装使用" class="article-share-link">分享</a>
       
       
       
@@ -227,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/23/express/" data-id="ckj7v98fz0003xsuk8np5e7ag" data-title="express" class="article-share-link">分享</a>
+      <a data-url="http://blog.jgxz.ltd/2020/12/23/express/" data-id="ckj7wk7xx0001a8uk91v7hoj0" data-title="express" class="article-share-link">分享</a>
       
       
       
@@ -265,7 +267,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jgxz.ltd/2020/12/23/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" data-id="ckj7v98g00004xsuk8mgt5ds2" data-title="hexo搭建个人博客指南" class="article-share-link">分享</a>
+      <a data-url="http://blog.jgxz.ltd/2020/12/23/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" data-id="ckj7wk7y20005a8uk61debcsp" data-title="hexo搭建个人博客指南" class="article-share-link">分享</a>
       
       
       
